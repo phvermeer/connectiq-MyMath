@@ -31,6 +31,14 @@ module MyMath{
         }
         return v;
     }
+
+    function sum(values as Array<Numeric>) as Numeric{
+        var v = 0;
+        for(var i=0; i<values.size(); i++){
+            v += values[i];
+        }
+        return v;
+    }
     
     function abs(value as Numeric) as Numeric{
         return (value < 0) ? -value : value;
